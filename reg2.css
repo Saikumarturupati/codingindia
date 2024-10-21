@@ -1,0 +1,179 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "open Sans",sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    left:0;
+    top: 30px;
+    padding: 0 10px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url("images/why.avif"); 
+    /* center/cover no-repeat */
+    /* transition:inherit; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0 ;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    text-decoration: noun;
+    gap: 10px;
+}
+.navbar .logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+.navbar .logo h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+}
+.navbar .link{
+    display: flex;
+    font-style:italic;
+    gap: 35px;
+    
+}
+.navbar .link a{
+    text-decoration: noun;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;   
+}
+.navbar .link a:hover{
+    color: blue;
+    width: 30px;
+    
+}
+.navbar .logo-btn{
+border: none;
+outline: none;
+color: gray;
+font-size: 1rem;
+font-weight: 600;
+padding: 10px 18px;
+border-radius: 3px;
+cursor: pointer;
+background: #FFFFFF;
+}
+.form-popup{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border: 2px solid red;
+    transform: translate(-50%, -50%);
+    max-width: 720px;
+    width: 100%;
+}
+.form-popup .form-box{
+    display: flex;
+}
+.form-box .form-details{
+max-width: 330px;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background:url("images/logo.png");
+background-size:cover;
+background-position: center; 
+}
+.form-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-box .form-content{
+    width: 100%;
+    padding: 35px;
+}
+form .input-field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form .input-field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 0.95rem;
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.input-field input:is(:focus, :valid){
+    padding: 16px 15px 0;
+}
+.input-field .input-focus{
+    border-color: blue;
+}
+form .input-field label{
+    position: absolute;
+    /* top: 0px; */
+    left:50%;
+    color: gray;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+.input-field input:is(:focus,:valid)~label{
+    color: blue; 
+     transform: translateY(-120%);
+    font-size: 0.75rem;
+}
+.form-box a{
+    color: blue;
+    text-decoration: none;
+}
+.form-box a:hover{ 
+    text-decoration: underline;
+    height: 30px;
+    border: 1px solid red;
+}
+.form-box .forgort-pass{
+    display: inline flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+form button{
+width: 100%;
+outline: none;
+border: none;
+font-size: 1rem;
+font-weight: 600;
+padding: 14px 0;
+border-radius: 3px;
+margin: 25px 0;
+color: #fff;
+cursor: pointer;
+background: blue;
+transition: 0.2s ease;
+}
+form button:hover{
+    border: 2px solid green;
+}
+.form-box .bottom-link{
+    text-align: center;
+
+}
